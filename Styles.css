@@ -1,4 +1,14 @@
 body{
 background-image: url(Blue_Clouds.jpg);
-font-family: Georgia, serif;
 }
+h1 {
+font-family: "Times New Roman", Times, serif;
+color: green;
+}
+p{
+font-family: Georgia, serif;
+color: red;
+font-size:18px;
+font-weight:bold;
+}
+
