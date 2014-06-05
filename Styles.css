@@ -2,3 +2,7 @@ body{
 background-image: url(Blue_Clouds.jpg);
 font-family: Georgia, serif;
 }
+p{
+font-family: "MS Sans Serif", Geneva, sans-serif;
+color: green;
+}
