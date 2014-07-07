@@ -35,12 +35,13 @@ public class RozetkaGoodsPage extends Page{
 			driver.findElement(By.xpath(currentXpath)).sendKeys(Keys.ENTER);
 			goodsCounter++;
 			Thread.sleep(3000);
-			driver.findElement(By.xpath("//div[@class='items']/div/div[4]/input")).clear();
-			driver.findElement(By.xpath("//div[@class='items']/div/div[4]/input")).sendKeys(String.valueOf(numberOfGoods));
-			driver.findElement(By.xpath("//div[@class='items']/div/div[4]/input")).sendKeys(Keys.ENTER);
-			String currentUrl=driver.getCurrentUrl();
-			currentUrl=currentUrl.replaceAll("#[a-z]*", "");
-			driver.get(currentUrl);
+			driver.findElement(By.xpath("//div[@class='cart-info']/div[2]/div[3]/input")).clear();
+			driver.findElement(By.xpath("//div[@class='cart-info']/div[2]/div[3]/input")).sendKeys(String.valueOf(numberOfGoods));
+			driver.findElement(By.xpath("//div[@class='cart-info']/div[2]/div[3]/input")).sendKeys(Keys.ENTER);
+			driver.findElement(By.xpath("//img[@class='popup-close-icon']")).click();
+			//String currentUrl=driver.getCurrentUrl();
+			//currentUrl=currentUrl.replaceAll("#[a-z]*", "");
+			//driver.get(currentUrl);
 			Thread.sleep(3000);
 			return goodsCounter;
 	 }

@@ -4,41 +4,10 @@
   <asA keyword="As a">buyer</asA>
   <iWantTo keyword="I want to">get lower delivery payment or presents if my order sum is high</iWantTo>
 </narrative>
-<scenario keyword="Scenario:" title="If sum to pay from 10 to 1500 a delivery payment is 35">
-<step outcome="successful">Given home page <parameter>http://rozetka.com.ua/</parameter></step>
-<step outcome="successful">And account with sum to pay from <parameter>10</parameter> to <parameter>1500</parameter></step>
-<step outcome="successful">When user checkouts</step>
-<step outcome="successful">Then the delivery sum is <parameter>35</parameter></step>
-</scenario>
-<scenario keyword="Scenario:" title="If sum to pay from 1500 to 20000 a delivery payment is 0">
-<step outcome="successful">Given home page <parameter>http://rozetka.com.ua/</parameter></step>
-<step outcome="successful">And account with sum to pay from <parameter>1500</parameter> to <parameter>20000</parameter></step>
-<step outcome="successful">When user checkouts</step>
-<step outcome="failed" keyword="FAILED">Then the delivery sum is <parameter>0</parameter><failure>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@name=&apos;total&apos;]/div[2]/div[2]&quot;}
-Command duration or timeout: 10.03 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d&apos;, time: &apos;2014-06-03 17:42:30&apos;
-System info: host: &apos;EPUAKYIW0022&apos;, ip: &apos;10.17.12.7&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_21&apos;
-Session ID: c42fe795-c221-4b15-a987-b8acdd19cde1
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, browserConnectionEnabled=true, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=30.0}]</failure></step>
-</scenario>
-<scenario keyword="Scenario:" title="If sum to pay more or equal 20000 a present should be added to the order">
-<step outcome="successful">Given home page <parameter>http://rozetka.com.ua/</parameter></step>
-<step outcome="successful">And account with sum to pay from <parameter>20000</parameter> to <parameter>30000</parameter></step>
-<step outcome="successful">When user checkouts</step>
-<step outcome="failed" keyword="FAILED">Then a present should be added to the order<failure>java.lang.AssertionError: </failure></step>
-</scenario>
 <scenario keyword="Scenario:" title="Delivery with &#1052;&#1080;&#1089;&#1090; &#1069;&#1082;&#1089;&#1087;&#1088;&#1077;&#1089;&#1089; to Donetsk cost 50">
 <step outcome="successful">Given home page <parameter>http://rozetka.com.ua/</parameter></step>
 <step outcome="successful">And account with sum to pay from <parameter>200</parameter> to <parameter>5000</parameter></step>
-<step outcome="failed" keyword="FAILED">When user checkouts with delivery town Donetsk and type &apos;Mist Express&apos;<failure>org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
-Command duration or timeout: 10.04 seconds
-Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d&apos;, time: &apos;2014-06-03 17:42:30&apos;
-System info: host: &apos;EPUAKYIW0022&apos;, ip: &apos;10.17.12.7&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_21&apos;
-Session ID: 66c879d4-5524-48b1-9948-75c44b3ef61b
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, browserConnectionEnabled=true, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=30.0}]</failure></step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">Then the delivery sum is <parameter>50</parameter></step>
+<step outcome="successful">When user checkouts with delivery town Donetsk and type &apos;Mist Express&apos;</step>
+<step outcome="successful">Then the delivery sum is <parameter>50</parameter></step>
 </scenario>
 </story>

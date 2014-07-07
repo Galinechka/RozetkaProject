@@ -52,7 +52,6 @@ public class RozetkaBookingSteps extends Steps {
 		 driver = new FirefoxDriver();
 		 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		 driver.manage().deleteAllCookies();
-		 System.out.println("hi1");
 	}
 	
 	@AfterScenario

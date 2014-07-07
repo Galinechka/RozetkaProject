@@ -62,7 +62,8 @@ public class RozetkaCheckInPage extends Page {
 			Thread.sleep(3000);
 			driver.findElement(By.xpath("//li[@name='couriers']/a")).click();
 			Thread.sleep(3000);
-			driver.findElement(By.xpath("//ul[@class='check-method-subl']/li[2]/div/label/input")).click();
+			driver.findElement(By.xpath("//div[@class='check-f-i-field']/div[2]/ul/li[2]/div/label")).click();
+			Thread.sleep(3000);
 		 }
 		 public String getDeliverySum() throws InterruptedException{
 			 Thread.sleep(5000);
