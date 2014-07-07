@@ -4,10 +4,5 @@ Narrative:
 In order to get addinitional financial promotion
 As a buyer
 I want to get lower delivery payment or presents if my order sum is high
-Scenario: Delivery with Мист Экспресс to Donetsk cost 50
+Scenario: If sum to pay from 10 to 1500 a delivery payment is 35
 Given home page http://rozetka.com.ua/
-And account with sum to pay from 200 to 5000
-When user checkouts with delivery town Donetsk and type 'Mist Express'
-Then the delivery sum is 50
-
-

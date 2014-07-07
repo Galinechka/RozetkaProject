@@ -32,10 +32,11 @@ import de.codecentric.jbehave.junit.monitoring.JUnitReportingRunner;
 
 import steps.RozetkaBookingSteps;
 
+import org.apache.log4j.Logger;
+
 @RunWith(JUnitReportingRunner.class)
 public class Booking extends JUnitStories
 {
-	
 	
 	@Override
 	public InjectableStepsFactory stepsFactory() {
@@ -84,6 +85,7 @@ public class Booking extends JUnitStories
 
 	@Test
 	public void run() throws Throwable {
+		
 		super.run();
 		
 	}

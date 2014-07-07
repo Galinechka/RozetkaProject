@@ -4,10 +4,5 @@
   <asA keyword="As a">buyer</asA>
   <iWantTo keyword="I want to">get lower delivery payment or presents if my order sum is high</iWantTo>
 </narrative>
-<scenario keyword="Scenario:" title="Delivery with &#1052;&#1080;&#1089;&#1090; &#1069;&#1082;&#1089;&#1087;&#1088;&#1077;&#1089;&#1089; to Donetsk cost 50">
+<scenario keyword="Scenario:" title="If sum to pay from 10 to 1500 a delivery payment is 35">
 <step outcome="successful">Given home page <parameter>http://rozetka.com.ua/</parameter></step>
-<step outcome="successful">And account with sum to pay from <parameter>200</parameter> to <parameter>5000</parameter></step>
-<step outcome="successful">When user checkouts with delivery town Donetsk and type &apos;Mist Express&apos;</step>
-<step outcome="successful">Then the delivery sum is <parameter>50</parameter></step>
-</scenario>
-</story>

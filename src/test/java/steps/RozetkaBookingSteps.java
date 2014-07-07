@@ -4,6 +4,7 @@ import static org.junit.Assert.fail;
 
 import java.util.concurrent.TimeUnit;
 
+import org.apache.log4j.Logger;
 import org.jbehave.core.annotations.AfterScenario;
 import org.jbehave.core.annotations.AfterStory;
 import org.jbehave.core.annotations.BeforeScenario;
@@ -24,6 +25,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.rozetka.booking.BaseSeleniumActions;
+import org.rozetka.booking.Booking;
 
 import pages.RozetkaCheckInPage;
 import pages.RozetkaGoodsPage;
@@ -45,13 +47,14 @@ public class RozetkaBookingSteps extends Steps {
 	public RozetkaGoodsPage goodsPage;
 	
 	private StringBuffer verificationErrors = new StringBuffer();
-	
+	Logger log = Logger.getLogger(Booking.class);
 	
 	@BeforeScenario
 	public void setUp(){
 		 driver = new FirefoxDriver();
 		 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		 driver.manage().deleteAllCookies();
+		 log.error("Starting mass rate charge calculation...");
 	}
 	
 	@AfterScenario
