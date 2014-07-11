@@ -21,8 +21,8 @@ And account with sum to pay from 20000 to 30000
 When user checkouts
 Then a present should be added to the order
 
-Scenario: Delivery with Мист Экспресс to Donetsk cost 50
+Scenario: Delivery with Мист Экспресс to Simferopol cost 50
 Given home page http://rozetka.com.ua/
 And account with sum to pay from 200 to 5000
-When user checkouts with delivery town Donetsk and type 'Mist Express'
+When user checkouts with delivery town Simferopol and type 'Mist Express'
 Then the delivery sum is 50

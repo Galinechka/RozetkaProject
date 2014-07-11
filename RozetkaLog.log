@@ -1,0 +1,8 @@
+2014-07-11 19:52:21,613 [ERROR][pool-1-thread-1 ][   org.rozetka.booking.Booking] - Could not find fieldorg.openqa.selenium.StaleElementReferenceException: Element not found in the cache - perhaps the page has changed since it was looked up
+Command duration or timeout: 10.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:30'
+System info: host: 'EPUAKYIW0022', ip: '10.17.12.7', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_21'
+Session ID: a320d14d-a932-4a38-8818-5deca033b188
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, browserConnectionEnabled=true, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=30.0}]
